@@ -1,0 +1,1568 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* homepage */
+#h1 {
+    font-size: 56px;
+    line-height: 64px;
+    color: #222;
+}
+
+#h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: #222;
+}
+
+#h4 {
+    font-size: 23px;
+    color: #222;
+}
+
+#h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+#h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#p {
+    font-size: 18px;
+    margin: 15px 0 20px 0;
+    color: #465b52;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 80px 0 40px 0;
+}
+
+button.normal {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 26px;
+    color: black;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+
+.body {
+    width: 100%;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: o.3s ease;
+}
+
+#navbar li a:hover {
+    color: #088178;
+    cursor: pointer;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    filter: invert(49%) sepia(82%) saturate(6898%) hue-rotate(161deg) brightness(88%) contrast(94%);
+    cursor: pointer;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+}
+
+img.mfnlogo:hover {
+    filter: invert(49%) sepia(82%) saturate(6898%) hue-rotate(161deg) brightness(88%) contrast(94%);
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+#header img {
+    width: 23px;
+    height: 23px;
+}
+
+#cart {
+    width: 23px;
+    height: 23px;
+    display: flex;
+}
+
+div#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#hero {
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp);
+    height: 91vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    background-image: url(images/btn.png);
+    background-color: transparent;
+    background-position: 60% 10%;
+    background-size: cover;
+    color: #088178;
+    border: 0;
+    padding: 34px 66px 14px 56px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#features .ft-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 0.5px solid #b6e5e2;
+    border-radius: 6px;
+    margin: 15px;
+}
+
+#features .ft-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#features .ft-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#features .ft-box h6 {
+    display: inline-block;
+    padding: 9px 8px 7px 8px;
+    line-height: 1;
+    color: #088178;
+    border-radius: 4px;
+    background-color: #fddde4;
+}
+
+#features .ft-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#features .ft-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#features .ft-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#features .ft-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#features .ft-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 0.5px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .desc {
+    text-align: start;
+    padding: 10px 4px;
+}
+
+#product1 .pro .desc span {
+    color: #606063;
+    font-size: 14px;
+}
+
+#product1 .pro .desc h5 {
+    padding: 7px 0;
+    color: #1f1e1e;
+}
+
+.star {
+    display: flex;
+    width: 18px;
+}
+
+#product1 .pro .desc h4 {
+    padding: 12px 0 0 0;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #e8f6ea;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#product1 .pro .cart img {
+    width: 65%;
+    font-size: 23px;
+    line-height: 40px;
+    margin-top: 6px;
+    filter: invert(49%) sepia(82%) saturate(6898%) hue-rotate(161deg) brightness(88%) contrast(94%);
+}
+
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp );
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: 100%;
+}
+
+#banner h4 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner h2 span {
+    color: #ef3636;
+}
+
+#banner button:hover {
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 23px 0;
+}
+
+#sm-banner .sec-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp );
+    width: 580px;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#sm-banner .sec-banner2 {
+    background-image: url(images/6a8d05fa6e4b8129d51818a558a6a112.png );
+}
+
+#sm-banner .sec-banner:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#sm-banner h4 {
+    color: #088178;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#sm-banner h2 {
+    color: #088178;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: #088178;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 55px;
+}
+
+#banner3 .sec-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp );
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#banner3 .sec-banner3 {
+    background-image: url(images/6a8d05fa6e4b8129d51818a558a6a112.png );
+}
+
+#banner3 .sec-banner4 {
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp );
+}
+
+#banner3 h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 24px;
+    padding: 18px 0;
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(images/);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    color: #fff;
+}
+
+#newsletter h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#newsletter p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #818ea0;
+}
+
+#newsletter span {
+    color: #ffbd27;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 35%;
+}
+
+#newsletter input {
+    height: 2.5rem;
+    padding: 0 1.5em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer .col .mfnlogo {
+    width: 23px;
+    margin-bottom: 30px;
+}
+
+footer .col .follow .sm-icons {
+    width: 120px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h2 {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    margin-bottom: 10px;
+}
+
+.follow {
+    position: absolute;
+    top: 5320px;
+}
+
+footer .follow {
+    margin-top: 52px;
+}
+
+footer .install .row #googleplayicon {
+    height: 30px;
+}
+
+footer .follow img {
+    height: 23px;
+    width: 23px;
+    color: #00ff91;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow img:hover,
+footer a:hover {
+    color: #088178;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #041e42;
+    color: #d5d5d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+footer .col .row img {
+    width: 100px;
+}
+
+#payment {
+    width: 200px;
+}
+
+
+/* shoppage */
+#page-header {
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h1,
+#page-header p {
+    color: #ffffff;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#pagination a img {
+    font-size: 16px;
+    width: 23px;
+    font-weight: 500;
+    position: absolute;
+
+}
+
+
+/* single product */
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 60%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h6 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 0 40px 0;
+}
+
+#prodetails .single-pro-details h4 {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0px 0 30px 0;
+}
+
+#prodetails .single-pro-details h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 40px 0 16px 0;
+}
+
+#prodetails select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+}
+
+#prodetails input {
+    width: 40px;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#prodetails input:focus {
+    outline: none;
+}
+
+#prodetails button {
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails span {
+    line-height: 23px;
+}
+
+
+/* blog page */
+#page-header .blog-header {
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp);
+}
+
+#blog {
+    padding: 150px 80px 0 80px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 115px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 60px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details h1,
+#blog .blog-details p {
+    padding: 18px 0;
+}
+
+#blog .blog-details h1 {
+    color: rgb(41, 41, 41);
+    line-height: 18px;
+}
+
+#blog .blog-details p {
+    color: #6c6c6c;
+    line-height: 18px;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(41, 41, 41);
+    font-weight: 700;
+    position: absolute;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #088178
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #088178
+}
+
+#blog .blog-box #date {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* about page */
+#page-header .about-header {
+    background-image: url(images/Levis-SG-Cool-MenBanner-1.webp);
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head h2 {
+    color: #088178;
+}
+
+#about-head div {
+    padding-left: 50px;
+    color: #6c6c6c;
+}
+
+#about-head marquee {
+    background: #088178;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app h1 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+#about-app .video {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+#about-head p {
+    margin: 20px 0px;
+}
+
+
+/* Contact Page */
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#contact-details .details h1,
+#form-details form h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+#contact-details .details h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 12px 0;
+}
+
+#contact-details .details li p {
+    color: #6c6c6c;
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 0 0 20px;
+}
+
+#contact-details img {
+    width: 20px;
+    height: 20px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 40px 80px 40px 40px;
+    border: 0.1px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #E1E1E1;
+}
+
+#form-details form button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .partners {
+    margin: 90px 0 0 0;
+}
+
+#form-details .partners div {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#form-details .partners div img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+#form-details .partners div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#form-details .partners div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+/* Cart page */
+#page-header {
+    height: 30vh;
+}
+
+#cart-details {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart-details td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart-details td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart-details td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart-details td:nth-child(4),
+#cart-details td:nth-child(5),
+#cart-details td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart-details td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart-details thead {
+    border: 1px solid#e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart-details thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart-details tbody td {
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #353535;
+}
+
+#cross {
+    width: 20px;
+}
+
+#prodimg {
+    width: 70px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 14px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+    border-radius: 6px;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    border-radius: 6px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    font-size: 14px;
+    padding: 14px;
+    color: #353535;
+}
+
+footer.section-p1 {
+    background-color: rgb(236, 236, 236);
+}
+
+.copyright {
+    margin-top: 0px;
+}
+
+@media (max-width:780px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background-color: #e3e6f3;
+        box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 20px;
+    }
+
+    div#mobile {
+        display: flex;
+    }
+
+    div#mobile img {
+        height: 23px;
+        font-size: 24px;
+        color: #1a1a1a;
+        margin-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        font-size: 24px;
+        top: -236px;
+        left: 16px;
+        color: #222;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #hero {
+        height: 75vh;
+        padding: 0px 80px;
+        background-position: top 0% right 160%;
+    }
+
+    #features {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #features .ft-box {
+        margin: 10px;
+        width: 150px;
+    }
+
+    .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+
+    #sm-banner .sec-banner {
+        width: 80%;
+        height: 40vh;
+        margin: 15px;
+    }
+
+    #banner3 {
+        padding: 0px 64px;
+        margin-bottom: 32px;
+    }
+
+    #newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #newsletter .form {
+        display: flex;
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    .col.install {
+        margin-top: 52px;
+    }
+
+    .follow {
+        position: absolute;
+        top: 6938px;
+        right: 255px;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        display: none;
+    }
+
+    /* blog page */
+    #blog {
+        padding: 100px 80px 0 80px;
+    }
+
+    /* Contact page */
+    #contact-details .map {
+        width: 50%;
+        height: 350px;
+    }
+
+    #form-details {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 100%;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-between;
+        margin: 120px 0 0 0;
+    }
+
+    #form-details .partners div {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    #form-details .partners div p {
+        margin: 20px 0 0 0;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /* Cart Page */
+    #cart-details {
+        overflow-x: auto;
+    }
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #coupon {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #coupon input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #subtotal {
+        width: 100%;
+        margin: 60px 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 435px) {
+    #navbar {
+        width: 180px;
+    }
+
+    #navbar li a {
+        font-size: 14px;
+    }
+
+    #header {
+        padding: 15px 40px;
+    }
+
+    #hero {
+        padding: 38px;
+        background-position: 20%;
+    }
+
+    h1#h2 {
+        font-size: 40px;
+        line-height: 70px;
+
+    }
+
+    h2#h1 {
+        font-size: 38px;
+        line-height: 36px;
+    }
+
+    #features {
+        justify-content: space-around;
+        padding: 16px;
+        margin: 23px 0 23px 0;
+    }
+
+    #features .ft-box {
+        width: 150px;
+        padding: 10px;
+    }
+
+    h2#h2 {
+        font-size: 32px;
+        margin-top: 23px;
+    }
+
+    p#p {
+        font-size: 16px;
+        padding: 0px;
+        margin: 20px 0 0 0;
+    }
+
+    #product1 .pro {
+        width: 81%;
+        padding: 10px 10px;
+        margin: 23px 0 0px 0;
+    }
+
+    #banner {
+        height: 50vh;
+    }
+
+    #sm-banner .sec-banner {
+        width: 80%;
+        height: 40 vh;
+        margin: 8px;
+    }
+
+    .sec-banner h2#h2 {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    #banner3 .sec-banner {
+        width: 100%;
+    }
+
+    .section-p1 {
+        padding: 45px 40px;
+    }
+
+    #newsletter .form {
+        display: flex;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    #newsletter p {
+        font-size: 16px;
+        color: #818ea0;
+        line-height: 20px;
+    }
+
+    .section-m1 {
+        margin: 80px 0 -1px 0;
+    }
+
+    .col.install {
+        margin-top: 20px;
+    }
+
+    .follow {
+        position: absolute;
+        top: 13471px;
+        right: 20px;
+    }
+
+    .col {
+        margin-top: 20px;
+    }
+
+    footer h2 {
+        font-size: 19px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
+
+    .copyright {
+        margin-top: -25px;
+    }
+
+    /* single product */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-details h6 {
+        font-size: 12px;
+        padding: 23px 0 0px 0;
+    }
+
+    #prodetails .single-pro-details h3 {
+        padding: 60px 0 16px 0;
+    }
+
+    /* blog page */
+    #blog {
+        padding: 130px 40px 0 40px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-box #date {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        font-size: 50px;
+        font-weight: 600;
+        color: #c9cbce;
+        z-index: -8;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 60px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
+    }
+
+    #blog .blog-details {
+        width: 100%;
+        padding: 20px 0px 60px 0;
+    }
+
+    /* about page */
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    /* Contact page */
+    #contact-details {
+        flex-direction: column;
+    }
+
+
+    #contact-details .details {
+        width: 100%;
+    }
+
+    #contact-details .map {
+        width: 100%;
+        height: 300px;
+        padding: 60px 0 0 0;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    #form-details {
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+        padding: 0px;
+    }
+
+    #form-details .partners div {
+        padding: 0;
+        flex-direction: row;
+        align-items: end;
+        margin: 25px 0;
+    }
+
+    #form-details .partners div img {
+        width: 90px;
+        height: 80px;
+    }
+
+    #form-details .partners div p {
+        line-height: 18px;
+    }
+
+    #form-details .partners div {
+        padding: 0;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    section#newsletter {
+        margin-top: 0px;
+    }
+
+    /* cart page */
+    #cart-details {
+        overflow-x: auto;
+    }
+}
+
+@media(max-width: 380px) {
+    #navbar {
+        width: 150px;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    #features .ft-box {
+        width: 100px;
+        padding: 8px;
+    }
+
+}
